@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="css/midia/mobile.css"
+      media="screen and (max-width:768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="css/midia/desktop.css"
+      media="screen and (min-width: 1024px)"
+    />
+    <link rel="stylesheet" href="/css/root.css">
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Interactive card details form</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+            .attribution {
+              font-size: 11px;
+              text-align: center;
+            }
+            .attribution a {
+              color: hsl(228, 45%, 44%);
+            }
+    </style>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    </style>
+    <script src="script/script.js" defer></script>
+  </head>
+  <body>
+    <span class="img"></span>
+    <section class="cartoes">
+      <section class="cartaoFrente">
+        <div class="circulos">
+          <span class="circuloGrande"> </span>
+          <span class="circuloPequeno"> </span>
+        </div>
+        <div class="baixoCartao">
+          <p id="cartaoNumero">0000 0000 0000 0000</p>
+          <span class="letrasCartao">
+            <p id="cartaoTitular">Jane Appleseed</p>
+            <p id="cartaoExpiracao"><span id="MMdisplay">00</span>/<span id="YYdisplay">00</span></p>
+          </span>
+        </div>
+      </section>
+      <section class="cartaoAtras">
+        <p id='cartaoCVC'>000</p>
+      </section>
+    </section>
+    <form id="formularioCartao">
+      <label for="name">Carholder name</label>
+      <input type="text" name="name" id="nameUser" placeholder="e.g. Jane Apllessed" oninput="atualizarTexto(event)" maxlength="20"/>
+      <label for="numberCard">Card number</label>
+      <input
+        type="number"
+        name="numberCard"
+        id="numberCard"
+        placeholder="e.g. 1234 5678 9123 0000"
+        oninput="atualizarTexto(event)"/>
+      <div class="dateCVC">
+        <label for="MMYY">Exp. date (mm/yy)</label>
+        <label for="CVC">cvc</label>
+      </div>
+      <div class="inputDateCVC">
+        <input type="number" name="MMYY" id="MM" placeholder="MM" class="inputMMYY" oninput="atualizarTexto(event)"/>
+        <input type="number" name="MMYY" id="YY" placeholder="YY" class="inputMMYY" oninput="atualizarTexto(event)"/>
+        <input type="number" name="CVC" id="CVC" placeholder="e.g. 123" class="inputCVC" oninput="atualizarTexto(event)" />
+      </div>
+      <button type="submit" id="confirmButton" >Confirm</button>
+    </form>
+    <section class="final">
+        <img src="images/icon-complete.svg" alt="complete">
+        <h2>Thank you!</h2>
+        <p>We've added your card details</p>
+        <button type="reset"
+        id="resertButton">Continue</button>
+    </section>
+  </body>
+</html>

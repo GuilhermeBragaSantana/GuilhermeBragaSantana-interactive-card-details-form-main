@@ -1,0 +1,183 @@
+p {
+  font-size: 15px;
+}
+
+.img {
+  position: absolute;
+  background-image: url(/images/bg-main-mobile.png);
+  height: 15rem;
+  width: 100%;
+  z-index: -10;
+}
+
+.cartoes {
+  display: flex;
+}
+
+/*Parte da frente do cartão */
+.cartaoFrente {
+  position: absolute;
+  margin-left: 5vw;
+  margin-top: 8rem;
+  width: 80vw;
+  max-width: 310px;
+  height: calc(80vw * 9 / 16);
+  max-height: 170px;
+  background-image: url(/images/bg-card-front.png);
+  background-repeat: no-repeat;
+  border-radius: 0.5rem;
+  z-index: -8;
+}
+
+.circulos {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 0.5rem 5vw;
+}
+
+.circuloGrande {
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--White);
+  border-radius: 100%;
+}
+
+.circuloPequeno {
+  width: 1rem;
+  height: 1rem;
+  background-color: transparent;
+  border-radius: 100%;
+  border: 0.1rem solid var(--Light--grayish--violet);
+}
+
+.baixoCartao {
+  margin-top: 3rem;
+  margin-left: 5vw;
+}
+
+.letrasCartao {
+  width: 15.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.letrasCartao > p {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.baixoCartao > p {
+  letter-spacing: 0.2rem;
+  font-size: 17px;
+  color: #fff;
+}
+
+.baixoCartao > span {
+  color: var(--Light--grayish--violet);
+  font-size: 15px;
+}
+
+/*Parte de trás do cartão */
+.cartaoAtras {
+  background-image: url(/images/bg-card-back.png);
+  background-size: cover;
+  width: 80vw;
+  max-width: 310px;
+  height: calc(80vw * 9 / 16);
+  max-height: 170px;
+  border-radius: 0.5rem;
+  z-index: -9;
+  margin-top: 2.3rem;
+  margin-left: 20vw;
+}
+
+.cartaoAtras > p {
+  margin-top: 4.5rem;
+  margin-left: 14rem;
+  font-size: 15px;
+  color: var(--Light--grayish--violet);
+  letter-spacing: 0.1rem;
+}
+
+form {
+  margin: 6rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+button {
+  width: 85vw;
+  height: 2.5rem;
+  border: 0.1rem solid var(--Light--grayish--violet);
+  border-radius: 0.5rem;
+}
+
+button:hover {
+  background-color: var(--Very--dark-violet-button);
+}
+
+label {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 10px;
+  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+input::placeholder {
+  padding-left: 1rem;
+  color: var(--Light--grayish--violet);
+}
+
+.dateCVC {
+  display: flex;
+  gap: 15vw;
+}
+
+.inputDateCVC {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.inputMMYY {
+  width: 20vw;
+}
+
+.inputCVC {
+  width: 42vw;
+}
+
+button {
+  margin-top: 1.5rem;
+  background-color: var(--Very--dark--violet);
+  color: var(--White);
+  cursor: pointer;
+}
+
+.final {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.final > h2 {
+  margin-top: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+.final > p {
+  color: var(--Dark--grayish--violet);
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.final > img {
+  width: 20vw;
+}

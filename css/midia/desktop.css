@@ -1,0 +1,184 @@
+.img {
+  position: absolute;
+  background-image: url(/images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 30vw;
+  z-index: -10;
+}
+
+.cartoes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 15vh 19vw;
+}
+
+.cartaoFrente {
+  position: absolute;
+  background-image: url(/images/bg-card-front.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20vw;
+  height: 13rem;
+  border-radius: 0.2rem;
+}
+
+.circulos {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 1rem 1.5rem;
+}
+
+.circuloGrande {
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff;
+  border-radius: 5rem;
+}
+
+.circuloPequeno {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: transparent;
+  border: 0.1rem solid var(--Dark--grayish--violet);
+  border-radius: 5rem;
+}
+
+.baixoCartao {
+  margin: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.baixoCartao > p {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0.2rem;
+}
+
+.letrasCartao {
+  width: 14.5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.letrasCartao > p {
+  color: var(--Light--grayish--violet);
+  font-size: 14px;
+}
+
+.cartaoAtras {
+  position: absolute;
+  background-image: url(/images/bg-card-back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20vw;
+  height: 13rem;
+  border-radius: 0.2rem;
+  margin: 15rem 5rem;
+}
+
+.cartaoAtras > p {
+  color: var(--Light--grayish--violet);
+  margin-top: 6rem;
+  margin-left: 19.5rem;
+}
+
+form {
+  margin-top: -10rem;
+  margin-left: 50vw;
+  width: 35vw;
+  height: 100vh;
+  display: display;
+  flex-direction: column;
+}
+
+input,
+button {
+  width: 100%;
+  height: 3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  border: 0.1rem solid var(--Light--grayish--violet);
+  border-radius: 0.5rem;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::placeholder {
+  padding-left: 1rem;
+  color: var(--Dark--grayish--violet);
+}
+
+label {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: var(--Very--dark--violet);
+}
+
+.dateCVC {
+  display: flex;
+  gap: 2rem;
+}
+
+.inputDateCVC {
+  display: flex;
+  gap: 1rem;
+}
+
+#YY,
+#MM {
+  width: 5vw;
+}
+
+button {
+  background-color: var(--Very--dark--violet);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--Very--dark-violet-button);
+}
+
+.final {
+  display: none;
+  flex-direction: column;
+  margin-left: 40vw;
+  align-items: center;
+}
+
+.final > h2 {
+  font-weight: 500;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.final > p {
+  color: var(--Dark--grayish--violet);
+  margin-bottom: 3rem;
+}
+
+.final > img {
+  width: 5vw;
+}
+
+.final > button {
+  width: 20vw;
+}

@@ -1,0 +1,16 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light--grayish--violet: hsl(270, 3%, 87%);
+  --Dark--grayish--violet: hsl(279, 6%, 55%);
+  --Very--dark--violet: hsl(270, 60%, 15%);
+  --Very--dark-violet-button: hsl(280, 70%, 9%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Space Grotesk", sans-serif;
+  overflow: hidden;
+}
